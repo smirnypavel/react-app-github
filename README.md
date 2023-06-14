@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Проект на React.js с использованием RTK Query и Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект представляет собой пример приложения на React.js, которое использует API GitHub для поиска разработчиков и их репозиториев. Он также использует библиотеки RTK Query и Redux для управления состоянием приложения.
 
-## Available Scripts
+## Установка
 
-In the project directory, you can run:
+Перед началом работы с проектом, убедитесь, что у вас установлен Node.js и npm (или yarn). Выполните следующие шаги:
 
-### `npm start`
+1. Клонируйте репозиторий:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+git clone https://github.com/smirnypavel/react-app.git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+bash
 
-### `npm test`
+2. Перейдите в папку проекта:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd your-repo
 
-### `npm run build`
+3. Установите зависимости:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
+или
+yarn install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Запуск
 
-### `npm run eject`
+После установки зависимостей, вы можете запустить проект. Выполните следующую команду:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+или
+yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Это запустит приложение в режиме разработки. Откройте http://localhost:3000 в вашем браузере, чтобы увидеть приложение.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Функциональность
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Приложение предоставляет следующую функциональность:
 
-## Learn More
+Поиск разработчиков по имени пользователя GitHub.
+Отображение информации о найденных разработчиках, таких как имя, аватар и ссылка на их профиль GitHub.
+Отображение списка репозиториев выбранного разработчика.
+Возможность открыть репозиторий в новой вкладке.
+Использование RTK Query и Redux
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+В этом проекте используется RTK Query для выполнения запросов к API GitHub и управления кэшированием данных. Redux используется для управления глобальным состоянием приложения.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Конфигурация RTK Query и Redux находится в файле src/app/store.js. Там вы найдете настройки сети, настройки RTK Query и создание Redux store.
+
+Вклад и обратная связь
+
+Если вы хотите внести вклад в проект или оставить отзыв, пожалуйста, создайте issue или pull request в репозитории. Мы всегда рады новым идеям и предложениям!
+
+Лицензия
+
+Этот проект лицензируется в соответствии с условиями лицензии MIT.
+
+Примечание: Пожалуйста, замените `"https://github.com/your-username/your-repo.git"` на фактический URL вашего репозитория GitHub в строке клонирования репозитория.
