@@ -1,7 +1,7 @@
 import React from "react";
 import { userAppSelector } from "../hooks/redux";
 
-function FavouritesPage() {
+function FavoritesPage() {
   const { favorites } = userAppSelector((state) => state.github);
   if (favorites.length === 0) return <p className=" text-center">No items</p>;
   return (
@@ -9,7 +9,10 @@ function FavouritesPage() {
       <ul className=" list-none">
         {favorites.map((f) => (
           <li key={f}>
-            <a href={f} target="_blank" rel="noreferrer">
+            <a
+              href={f}
+              target="_blank"
+              rel="noreferrer">
               {f}
             </a>
           </li>
@@ -19,4 +22,4 @@ function FavouritesPage() {
   );
 }
 
-export default FavouritesPage;
+export default FavoritesPage;
